@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CMRD SHOP</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/CMRD/cmrd7.JPG" type="image/x-icon">
+    </head>
+    <body>  
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="/CMRD/cmrd7.JPG" alt="cmrdlogo" style="width: 80px;">
+            </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/CMRD/shop.html">Shop</a></li>
+                <li><a href="/CMRD/about.html">About</a></li>
+                <li><a href="/CMRD/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>The lifestyle is restricted to true COMRADES</h1>
+                <p>Explore the latest drops in our streetwear fashion</p>
+                <a href="/CMRD/shop.html" class="shop-button">Visit our shop</a>
+            </div>
+        </section>
+
+       <div class="video-background">
+        <video autoplay  loop id="background-video" muted autoplay>
+            <source src="/CMRD/video/cmrdvid.MOV" >
+        </video>
+       </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>CMRD Streetwear is more than just clothing; it's a lifestyle. We blend urban culture with bold urban culture with bold designs, offering fashion that makes a statement</p>
+                </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@CMRD.com</p>
+                <p>Phone: +2349060734526</p>
+            </div>
+
+          
+            <section id="social-media">
+                <h2>Follow Our Socials</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/yourprofile" target="_blank"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.twitter.com/yourprofile" target="_blank"><img src="twitter (1).png" alt="Twitter"></a></li>
+                    <li><a href="http://www.instagram.com/yourprofile" target="_blank"><img src="instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 CMRD Shop. All rights reserved.</p>
+        </div>
+
+        <style>
+            body {
+                background-image: url("");
+            }
+
+            footer {
+                background-color: #000;
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .footer-container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .footer-section {
+                width: 30%;
+                margin: 10px 0;
+            }
+
+            .footer-section h3 {
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            .footer-section p, .footer-section a {
+                color: white;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+            .footer-section a:hover {
+                color: #fff;
+            }
+
+            .footer-bottom {
+                margin-top: 20px;
+                border-top: 1px solid #555;
+                padding-top: 10px;
+                font-size: 12px;
+                color: white;
+            }
+
+            @media (max-width: 768px) {
+                .footer-section {
+                    width: 100%;
+                }
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .video-background {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -9999;
+                pointer-events: none;
+                background-image: url("cmrd\ logo.PNG");
+            }
+
+            #background-video {
+                width: 100vw;
+                height: 100vh;
+                pointer-events: none;
+                margin-top: 10px;
+                overflow: hidden;
+                position: relative;
+                left: -100%;
+                animation: slideIn 5s ease-in-out forwards ;
+            }
+
+            @keyframes slideIn {
+                0% {
+                    left: -100%;
+                }
+
+                100% {
+                    left: 0;
+                }
+            }
+
+            #social-media {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            #social-media ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            #social-media li {
+                display: inline;
+                margin: 0 10px;
+            }
+
+            #social-media img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .video-background img {
+                width: 300px;
+                height: 300px;
+            }
+
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                }
+
+                .item {
+                    flex: 1 1 100%;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .item {
+                    font-size: 14px;
+                    padding: 10px;
+                }
+            }
+        </style>
+
+        </footer>
+    </body>
+</html>

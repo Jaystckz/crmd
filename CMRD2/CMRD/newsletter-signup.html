@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Join Our Community - CMRD Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="cmrd7.JPG" type="image/x-icon">
+    </head>
+    <body>
+        
+        <main id="community-page">
+
+            <section id="hero-section">
+                <h1>Join the CMRD community</h1>
+                <p>Be the first to know about exclusive drops, events, and more.</p>
+                    <a href="#signup-form" class="btn">Sign Up Now</a>
+            </section>
+
+            <section id="benefits-section">
+                <h2>Why Join Our Community?</h2>
+                <ul class="benefits-list">
+                    <li><strong>Exclusive Access:</strong>Get early access to limited collections.</li>
+                    <li><strong>Members-only Events:</strong>Invitations to special events and parties.</li>
+                    <li><strong>Streetwear Culture:</strong>Connect with the like minded people who share your passion</li>
+                </ul>
+            </section>
+
+            <section id="signup-section">
+                <h2>Sign Up</h2>
+                <form id="signup-form" action="submit.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn">Join Now</button>
+                </form>
+
+                <p class="home-link"><a href="about.html">Back to About</a></p>
+
+            </section>
+
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                #hero-section h1 {
+                    color: whitesmoke;
+                    font-size: 40px;
+                }
+
+                #hero-section p {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f4f4f4;
+                    color: #333;
+                    line-height: 1.6;
+                    padding: 20px;
+                    background-image: url("cmrd11.JPG");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                main#community-page {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                #benefits-section {
+                    text-align: center;
+                    padding: 60px 20px;
+                    background-color: #fff;
+                    color: #111;
+                    border-radius: 10px;
+                }
+
+                #benefits-section h2 {
+                    font-size: 2.5rem;
+                    margin-bottom: 40px;
+                    text-transform: uppercase;
+                }
+
+                .benefits-list {
+                    list-style-type: none;
+                }
+
+                .benefits-list li {
+                    font-size: 1.2rem;
+                    margin-bottom: 20px;
+                    color: #555;
+                }
+
+                .benefits-list li strong {
+                    color: #000;
+                    font-weight: bold;
+                }
+
+                #signup-section {
+                    background-color: transparent;
+                    padding: 60px 20px;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    backdrop-filter: blur(0.2rem);
+                }
+
+                #signup-section h2 {
+                    font-size: 2rem;
+                    margin-bottom: 40px;
+                    color: #000;
+                    font-weight: bold;
+                }
+
+                #signup-form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                #signup-form input {
+                    width: 100%;
+                    max-width: 500px;
+                    padding: 15px;
+                    margin-bottom: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+
+                #signup-form button {
+                    padding: 15px 30px;
+                    background-color: #111;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    #signup-form button:hover {
+                        background-color: #333;
+                    }
+
+                    @media (max-width: 768px) {
+                        #benefits-section h2, #signup-section h2 {
+                            font-size: 2rem;
+                        }
+
+                        #signup-form input {
+                            width: 90%;
+                        }
+                    }
+
+                    .home-link {
+                        margin-top: 20px;
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+
+                    .home-link a {
+                        color: #111;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+
+                    .home-link a:hover {
+                        color: #333;
+                        text-decoration: underline;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                }
+
+                .item {
+                    flex: 1 1 100%;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .item {
+                    font-size: 14px;
+                    padding: 10px;
+                }
+            }
+
+            </style>
+
+        </main>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout - CMRD Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="cmrd7.JPG" type="image/x-icon">
+    </head>
+    <body>
+
+        <section id="Checkout-section">
+            <div class="container">
+                <h2>Checkout</h2>
+
+                <div class="Checkout-product-summary">
+                    <h3>Your Order</h3>
+                    <div class="product-item">
+                        <img src="cmrd1.JPG" alt="Product Name">
+                        <div class="Product-info">
+                            <h4>Product Name</h4>
+                            <p>Price:N7000</p>
+                            <p>Quantity: 1</p>
+                        </div>
+                    </div>
+                    <div class="total-price">
+                        <h4>Total:N7000</h4>
+                        
+                            <button id="add-to-cart">Add to Cart</button>
+            
+                </div>
+            </div>
+
+            <form id="Checkout-form">
+                <h3>Shipping Details</h3>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <input type="text" id="address" placeholder="Enter your address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter your city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="postal-code" placeholder="Enter postal-code" required>
+                </div>
+
+                <h3>Payment Method</h3>
+                <div class="form-group">
+                    <label>
+                        <input type="radio" name="Payment" value="card" checked> Credit/Debit Card
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="radio" name="Payment" value="paypal"> PayPal
+                    </label>
+                </div>
+
+                <button type="submit" class="btn place-order-btn">Place Order</button>
+            </form>
+
+            <p class="home-link"><a href="shop.html">Back to Shop</a></p>
+
+            </div>
+        </section>
+
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                background-image: url("cmrd\ logo.PNG");
+                background-position: center;
+                background-repeat: unset;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                background: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            h2,h3 {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .checkout-product-summary {
+                margin-bottom: 30px;
+            }
+
+            .product-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .product-item img {
+                width: 100px;
+                height: auto;
+                margin-right: 20px;
+            }
+
+            .product-info h4 {
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+            }
+
+            .total-price h4 {
+                text-align: right;
+                font-size: 1.5rem;
+                color: #ff5252;
+            }
+
+            #checkout-form {
+                margin-bottom: 30px;
+            }
+
+            .form-group {
+                margin-bottom: 15px;
+            }
+
+            .form-group label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+            input[type="radio"] {
+                margin-right: 10px;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #000;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-radius: 5px;
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn:hover {
+                background-color: #333;
+            }
+
+            .place-order-btn {
+                width: 100%;
+                margin-top: 20px;
+                padding: 15px 0;
+                background-color: #ff5252;
+            }
+
+            .place-order-btn:hover {
+                background-color: #ff3333;
+            }
+        </style>
+
+        <script>
+            const form = document.getElementById('checkout-form');
+            form.addEventListener('submit',function(event)) {
+                event.preventDefault ();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+
+                if (!name || !email) {
+                    alert('Please fill out all the required fields.');
+                    return;
+                }
+
+                alert('Order placed successfully! Thank you for shopping.'); form.reser();
+            });
+        </script>
+
+    </body>
+</html>
